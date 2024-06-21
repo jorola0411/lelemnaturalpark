@@ -59,6 +59,13 @@
     position: relative;
     float: left;
     padding: 20px 10px;
+    margin-top: 20px;
+    vertical-align: middle;
+    display: table-cell;
+    height: 100%;
+    color: white;
+    font-family: Lato;
+    font-size: 20px;   
 }
 .navigation a:hover {
     color: #553b10;
@@ -67,15 +74,6 @@
 }
 .navigation a:last-child{
     padding-right: 0;
-}
-
-.navigation a{
-    vertical-align: middle;
-    display: table-cell;
-    height: 100%;
-    color: white;
-    font-family: Lato;
-    font-size: 16px;     
 }
 img {
     float: left;
@@ -102,9 +100,13 @@ color:red;
 font-family: Lato;
 }
 
+.homeimg {
+    margin-top: 100px;
+}
 .hh1 {
     text-align: center;
     font-family: Lato;
+    margin-top: 100px;
 }
 .cards {
     display: flex;
@@ -245,4 +247,21 @@ font-family: Lato;
     margin-right: auto;
     width: 20%;
     justify-content: space-around;
+}
+
+.donate-button {
+    background-color: #ff4500;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    position: absolute;
+    right: 40px;
+    margin-top: 25px;
+    font-family: Lato;
+}
+
+.donate-button:hover {
+    background-color: #ff6347;
 }
