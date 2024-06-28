@@ -23,6 +23,42 @@
             </nav>
         </div>
     </header>
+    <div class="banner">
+        <img src="img/banner1.jpg">
+        <p class="BannerTitle"> Buy Tickets</p>
+    </div>
+    <div class="ticketcontainer">
+        <h1>General Admission</h1>
+        <form id="ticketForm" class="ticketForm">
+            <div class="ticket">
+                <div class="ticket-info">
+                    <span class="ticket-type">Adult Tickets (18-64)</span>
+                    <p>Regular Price: $25.00</p>
+                    <p>Member Price: $22.00</p>
+                </div>
+                <input type="number" id="adultTickets" name="adultTickets" value="0" min="0">
+            </div>
+            <div class="ticket">
+                <div class="ticket-info">
+                    <p>Child Tickets (3-17)</span>
+                    <p>Regular Price: $15.00</p>
+                    <p>Member Price: $12.00</p>
+                </div>
+                <input type="number" id="childTickets" name="childTickets" value="0" min="0">
+            </div>
+            <div class="ticket">
+                <div class="ticket-info">
+                    <span class="ticket-type">Senior Tickets (65+)</span>
+                    <p>Regular Price: $20.00</p>
+                    <p>Member Price: $18.00</p>
+                </div>
+                <input type="number" id="seniorTickets" name="seniorTickets" value="0" min="0">
+            </div>
+            <div class="total">
+                Total Cost: $<span id="totalCost">0</span>
+            </div>
+            <button type="submit" class="buybutton">Buy Tickets</button>
+        </form>
     </div>
     <div class="footer">
         <div class="footer-container">
@@ -47,4 +83,5 @@
         </div>
     </div>  
 </body>
+<script src="ticket.js"></script>
 </html>
