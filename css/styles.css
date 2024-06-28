@@ -240,7 +240,6 @@ body {
 .connect img {
     max-width:100%; 
 	height: auto; 
-	border:solid 1px #ccc; 
 }
 
 .btn {
@@ -311,6 +310,13 @@ body {
     font-size: 14px;
     color: #666;
     text-align: left;
+    
+}
+.Frog_Description {
+    font-size: 14px;
+    color: #666;
+    text-align: left;
+    margin-top: 155px;
 }
 
 .learnMore {
@@ -418,3 +424,15 @@ body {
 }
 /*  Footer */
 
+.frog {
+    margin-top: 200px;
+}
+.socialmediaimg{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+}
