@@ -1,24 +1,39 @@
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
-*{
+
+* {
     margin: 0;
     padding: 0;
     list-style: none;
     text-decoration: none;
+    box-sizing: border-box;
 }
 
-.header{
+body {
+    font-family: 'Lato', sans-serif;
+    background-color: #F5F5F5;
+    color: #333;
+}
+
+/*  header */
+.header {
+    font-family: "Abril Fatface", serif;
     width: 100%;
     height: 100px;
-    display: block;
-    background-color: burlywood;
+    display: flex;
+    align-items: center;
+    background-color: #30386D;
+    padding: 0 20px;
 }
 
-.inner_header{
-    width: 1000px;
-    height: 100%;
-    margin: 0;
+.inner_header {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .logo_container{
@@ -37,7 +52,7 @@
     height: 100%;
     display: table-cell;
     vertical-align: middle;
-    font-family: Abril Fatface;
+
     font-size: 32px;
     font-weight: 400;
 }
@@ -48,156 +63,335 @@
     text-align: left;
 }
 
-.navigation{
-    float: right;
-    height: 100%;
-    overflow: hidden;
+.navigation {
+    display: flex;
+    align-items: center;
 }
 
-.navigation a{
-    height: 100%;
-    position: relative;
-    float: left;
-    padding: 20px 10px;
-    margin-top: 20px;
-    vertical-align: middle;
-    display: table-cell;
-    height: 100%;
-    color: white;
-    font-family: Lato;
-    font-size: 20px;   
+.navigation a {
+    margin-left: 20px;
+    color: #F8F8F3;
+    font-size: 18px;
+    transition: color 0.3s ease;
 }
+
 .navigation a:hover {
-    color: #553b10;
-    padding: 20px 10px;
-    overflow: hidden;
+    color: #FFD75E;
 }
-.navigation a:last-child{
-    padding-right: 0;
+
+.donate-button {
+    font-family: "Abril Fatface", serif;
+    font-size: larger;
+    margin-left: 100px;
+    color: #30386D ;
+    background-color:#fcd434 ;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
 }
-img {
-    float: left;
+
+.donate-button:hover {
+    background-color: #ff6347;
 }
+
+/*  till here, header */
+
+/* Hero section */ 
 
 .hero {
+    position: relative;
     width: 100%;
     height: 100vh;
+    overflow: hidden;
+}
+
+.slides {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
+    width: 100%; /* Adjust this value based on the number of slides */
+    transition: transform 1s ease;
+    height: 100%; 
+}
+
+.slide {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    flex-shrink: 0;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+.caption {
+    font-family: "Abril Fatface", serif;
+    position: absolute;
+    bottom: 45%;
+    left: 90%;
+    transform: translateX(-30%);
     color: white;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('https://placehold.co/600x400');
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    font-size: 24px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 5px;
 }
 
-.p1 {
-text-align:center;
-color:red;
-font-family: Lato;
+.controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
 }
 
-.homeimg {
-    margin-top: 100px;
+.prev, .next {
+    font-size: 24px;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
 }
-.hh1 {
+
+
+/* homepage contents*/
+
+.hh1 { /*main headers*/
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-family: 'Abril Fatface', cursive;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+/* About us and oparation hours section*/
+.about, .operation-hours {
+    padding: 50px 20px;
     text-align: center;
-    font-family: Lato;
-    margin-top: 100px;
+    background-color: #f5f5f5;
 }
-.cards {
+
+.about-content,.hours-content {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-text, .hours-text {
+    flex: 1;
+    text-align: left;
+    padding-right: 100px; /* Space between text and image */
+}
+
+.about-images {
+    flex: 1;
+    text-align: center; display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.about-image {
+    width: 70%; /* Adjust width as needed */
+    margin-bottom: 20px;
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Featured animals section*/
+.featured {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #30386D;
+}
+.featured_head {
+     font-family: "Abril Fatface", serif;
+    color: #ccc;
+}
+.operation-hours {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f5f5f5;
+}
+.google-map {
+    width: 100%; 
+    text-align: right; 
+}
+
+/* connect section */
+.connect {
+    margin-top: 100px;
+    text-align: center;
+    display: flex;
+	flex-wrap:wrap;
+    position: relative;
+}
+.connect img {
+    max-width:100%; 
+	height: auto; 
+	border:solid 1px #ccc; 
+}
+
+.btn {
+    font-family: "Abril Fatface", serif;
+    display: inline-block;
+    padding: 10px 20px;
+    color:#F5F5F5;
+    background-color: #599590;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.btn:hover {
+    background-color: #85B5B2;
+}
+
+/* till homepage*/
+
+/* making banners for pages*/
+.banner {
+    display: flex;
+	flex-wrap:wrap;
+    position: relative;
+}
+.banner img {
+    max-width:100%; 
+	height: auto; 
+	border:solid 1px #ccc; 
+}
+.BannerTitle {
+    color:#1B2538;
+    position: absolute;
+    margin-top:100px;
+    margin-left: 30px;
+    font-family: "Abril Fatface", serif;
+    font-size: 80px;
+
+}
+/*  till here making banners*/
+ 
+
+/*  Animal page Grids */
+.p1 {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #555;
+}
+.card_head {
+    margin-top: 30px;
+    font-family: "Abril Fatface", serif;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Creates 3 columns of equal width */
+    gap: 20px; /* Gap between grid items */
     padding: 20px;
-    gap: 20px;
+    margin: 20px 0;
+    background-color: #fff;
+}
+
+.Animal_Description {
+    font-size: 14px;
+    color: #666;
+    text-align: left;
+}
+
+.learnMore {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    text-align: right;
+    text-decoration: underline;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
 }
 
 .card {
     background-color: #fff;
-    border-radius: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    width: 30%;
-    margin-bottom: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     padding: 20px;
-    box-sizing: border-box;
+    text-align: left;
+    transition: transform 0.3s ease;
+    overflow: hidden; /* Ensures content doesn't overflow */
+    animation: fadeIn 0.9s ease-out; /* Apply fadeIn animation */
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/*  Till here, Animal page Grids */
+
+/*  Next page button for animal page */
+.next-page {
     text-align: center;
-    font-family: Lato;
+    margin: 100px;
 }
 
-.card img {
-    width: 80%;
-    height: auto;
-    display: block;
-    margin-bottom: 15px;
+.next-page button {
+    font-family: "Abril Fatface", serif;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #599590;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
-.card h3 {
-    margin: 15px 0 10px;
+.next-page button:hover {
+    background-color: #85B5B2;
 }
+/*  Next page button for animal page */
 
-.card p {
-    padding: 0 15px 15px;
-    margin: 0;
-    color: #555;
-}
-/*.cards {
-    margin-top: 200px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding: 20px;
-    gap: 20px; 
-}
-.card {
-    width:30%;
-    display: grid;
-    grid-template-rows: 80px 200px auto;
-    column-gap: 50px;
-    background-color: white;
+
+/*  Footer */
+.footer h3 {
+    font-family: "Abril Fatface", serif;
     
 }
-.card > div{
-    display: block;
-    height:200px;
-    align-items: center;
-    background-color: white;
-}
-.card img{
-    width: 100px;
-    height: 100px;
+
+.footer {
+    background-color: #454C98;
+    color: #F8F8F3;
+    padding: 40px 20px;
+    text-align: center;
+    margin-top: 100px;
 }
 
-.card p {
-    text-align: center;
-}
-.card h3{
-    text-align: center;
-}*/
-
-.footer { 
-    position: relative; 
-    bottom: -700; 
-    text-align: center;
-    background-color: black;
-    overflow: hidden;
-    width: 100%;
-    padding: 0;
-    color: white;
-    overflow: hidden;
-  }
-
-  .footer-container {
+.footer-container {
     display: flex;
     justify-content: space-around;
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 0 auto;
     flex-wrap: wrap;
 }
@@ -212,56 +406,15 @@ font-family: Lato;
     border-bottom: 1px solid #555;
     padding-bottom: 10px;
     margin-bottom: 10px;
-    color: #f9f9f9;
 }
 
-.btn {
-    display: block;
-    width: 200px;
-    padding: 1em;
-    
-    margin-left: auto;
-    margin-right: auto;
-    color: white;
+.footer-box a {
+    color: #FFD75E;
     text-decoration: none;
-    font-size: 1.5em;
-    border: 3px solid white;
-    border-radius: 20px;
-    background-color: green;
-}
-.btn:hover {
-    background: lightgreen;
-    color: black;
 }
 
-.socialmedia{
-    margin-top: 350px;
-    text-align: center;
-    font-family: Lato;
-    
+.footer-box a:hover {
+    text-decoration: underline;
 }
+/*  Footer */
 
-.socialmedia img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 20%;
-    justify-content: space-around;
-}
-
-.donate-button {
-    background-color: #ff4500;
-    color: #fff;
-    padding: 15px 30px;
-    border-radius: 5px;
-    text-decoration: none;
-    transition: background-color 0.3s;
-    position: absolute;
-    right: 40px;
-    margin-top: 25px;
-    font-family: Lato;
-}
-
-.donate-button:hover {
-    background-color: #ff6347;
-}

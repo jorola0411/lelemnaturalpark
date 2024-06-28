@@ -1,95 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+   <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
     <title>Vancouver Zoo</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <div class="header">
+    <header class="header">
         <div class="inner_header">
-
             <div class="logo_container">
-            <img src="img/logo.png">
+                <img src="img/logo.png" alt="Zoo Logo">
                 <h1>Van<span>Zoo</span></h1>
             </div>
-
-            <ul class="navigation">
+            <nav class="navigation">
                 <a href="index.html">HOME</a>
                 <a href="animal.html">ANIMALS</a>
                 <a href="merch.html">MERCH</a>
                 <a href="about.html">ABOUT US</a>
                 <a href="tickets.html">TICKETS</a>
-            </ul>
-            <a href="#" class="donate-button">Donate</a>
+                <button class="donate-button">Donate</butn>
+            </nav>
         </div>
-    </div>   
+    </header>
+
+    <div class="banner">
+        <img src="img/banner1.jpg">
+        <p class="BannerTitle"> Animal Libraly</p>
+    </div>
     <section class="cards">
         <div class="card">
-            <h3>Bear</h3>
+            <h3 class="card_head"> Bear</h3>
             <div>
-                <img src="img/bear.png">
+                <img src="img/bear.png" alt="Bear">
             </div>
-            <p>Bears have large bodies with strong limbs, and their fur varies greatly in color and length depending on the species and habitat. They possess sharp claws and strong jaws. Most bear species have an acute sense of smell and are excellent climbers and swimmers.</p>
+            <p class="Animal_Description">Bears have large bodies with strong limbs, and their fur varies greatly in color and length depending on the species and habitat. They possess sharp claws and strong jaws. Most bear species have an acute sense of smell and are excellent climbers and swimmers.</p>
+            <p class="learnMore"> Learn more </p>
         </div>
         <div class="card">
-            <h3>Raccoon</h3>
+            <h3 class="card_head">Raccoon</h3>
             <div>
-                <img src="img/raccoon.png">
+                <img src="img/raccoon.png" alt="Raccoon">
             </div>
-            <p>Raccoons have a robust body with greyish-brown fur and a distinctive black mask over their eyes. They have five toes on each paw and are highly dexterous, capable of manipulating objects with their front paws. They are also known for their adaptability to various environments.</p>
+            <p class="Animal_Description">Raccoons have a robust body with greyish-brown fur and a distinctive black mask over their eyes. They have five toes on each paw and are highly dexterous, capable of manipulating objects with their front paws. They are also known for their adaptability to various environments.</p>
+            <p class="learnMore"> Learn more </p>
         </div>
         <div class="card">
-            <h3>Beaver</h3>
+            <h3 class="card_head">Beaver</h3>
             <div>
-                <img src="img/beaver.png">
+                <img src="img/beaver.png" alt="Beaver">
             </div>
-            <p> Beavers have large, flat tails and powerful incisors adapted for gnawing wood. Their bodies are well-suited for aquatic life, with webbed hind feet and a waterproof coat. They can remain submerged for up to 15 minutes and have transparent eyelids to see underwater.</p>
+            <p class="Animal_Description">Beavers have large, flat tails and powerful incisors adapted for gnawing wood. Their bodies are well-suited for aquatic life, with webbed hind feet and a waterproof coat. They can remain submerged for up to 15 minutes and have transparent eyelids to see underwater.</p>
+            <p class="learnMore"> Learn more </p>
         </div>
         <div class="card">
-            <h3>Wolf</h3>
+            <h3 class="card_head">Wolf</h3>
             <div>
-                <img src="img/wolf.png">
+                <img src="img/wolf.png" alt="Wolf">
             </div>
-            <p>Wolves are large canids with strong jaws, long legs, and dense fur that varies in color from gray to white, brown, and black. They have keen senses of smell and hearing, and their social structures are highly organized, with packs typically consisting of a dominant breeding pair and their offspring.</p>
+            <p class="Animal_Description">Wolves are large canids with strong jaws, long legs, and dense fur that varies in color from gray to white, brown, and black. They have keen senses of smell and hearing, and their social structures are highly organized, with packs typically consisting of a dominant breeding pair and their offspring.</p>
+            <p class="learnMore"> Learn more </p>
         </div>
         <div class="card">
-            <h3>Animal 5</h3>
+            <h3 class="card_head">Eagle</h3>
             <div>
-                <img src="https://placehold.co/100x100">
+                <img src=img/eagle.png alt="Animal 5">
             </div>
-            <p>animals yippie</p>
+            <p class="Animal_Description">Animals yippie</p>
+            <p class="learnMore"> Learn more </p>
         </div>
         <div class="card">
-            <h3>Animal 6</h3>
+            <h3 class="card_head">Flog</h3>
             <div>
-                <img src="https://placehold.co/100x100">            
+                <img src="https://placehold.co/100x100" alt="Animal 6">
             </div>
-            <p>animals yippie</p>
+            <p class="Animal_Description">Animals yippie</p>
+            <p class="learnMore"> Learn more </p>
         </div>
+
+
     </section>
-    <div class="footer">
+    
+
+    <div class="next-page">
+        <button onclick="nextPage()">Next Page</button>
+    </div>
+</section>
+
+    <footer class="footer">
         <div class="footer-container">
             <div class="footer-box">
                 <h3>Support Us</h3>
-                <p>Donate</p>
-                <p>Volunteer</p>
-                <p>Store</p>
+                <p><a href="#">Donate</a></p>
+                <p><a href="#">Volunteer</a></p>
+                <p><a href="#">Store</a></p>
             </div>
             <div class="footer-box">
                 <h3>Get in Touch</h3>
-                <p>contact@example.com</p>
+                <p><a href="mailto:contact@example.com">contact@example.com</a></p>
                 <p>+123 456 7890</p>
                 <p>555 Seymour St, Vancouver, BC V6B 3H6</p>
             </div>
             <div class="footer-box">
                 <h3>Hours</h3>
                 <p>8:00AM - 8:00PM</p>
-                <br>
                 <p>7 days a week</p>
             </div>
         </div>
-    </div>
+    </footer>
+
+    <script>
+        function nextPage() {
+            window.location.href = "animal.html"; // Replace with the next page URL
+        }
+    </script>
 </body>
 </html>

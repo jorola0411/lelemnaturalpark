@@ -1,81 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vancouver Zoo</title>
-    <link rel="stylesheet" href="css/styles.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+        <title>Vancouver Zoo</title>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
 
 <body>
-    <div class="header">
+    <header class="header">
         <div class="inner_header">
-
             <div class="logo_container">
-            <img src="img/logo.png">
+                <img src="img/logo.png" alt="Zoo Logo">
                 <h1>Van<span>Zoo</span></h1>
             </div>
-
-            <ul class="navigation">
+            <nav class="navigation">
                 <a href="index.html">HOME</a>
                 <a href="animal.html">ANIMALS</a>
                 <a href="merch.html">MERCH</a>
                 <a href="about.html">ABOUT US</a>
                 <a href="tickets.html">TICKETS</a>
-            </ul>
-            <a href="#" class="donate-button">Donate</a>
+                <button class="donate-button">Donate</butn>
+            </nav>
         </div>
-    </div>  
+    </header>
+    
     <section class="hero">
-        <div class="hero-inner">
-            <h1>dfadfdsfdf</h1>
-            <h2>Dfasdfad</h2>
-            <br>
-            <h2>dfadfdfdfadf</h2>
+        <div class="slides">
+            <div class="slide active">
+                <img src="img/hero_2.jpg" alt="Slide 1">
+                <div class="caption">Discover more</div>
+            </div>
+            <div class="slide">
+                <img src="img/hero_1.jpg" alt="Slide 2">
+            </div>
+            <div class="slide">
+                <img src="img/hero_3.jpg" alt="Slide 3">
+            </div>
+        </div>
+        <div class="controls">
+            <span class="prev">&#10094;</span>
+            <span class="next">&#10095;</span>
         </div>
     </section>
-        <div class="homeimg">
-        </div>
-        <img src="https://placehold.co/600x400">
-        <div class="hh1">
-            <h1>Lorem Ipsum </h1>
-        </div>
-        <div class="p1">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sed eros in risus tincidunt mattis. Morbi
-                auctor posuere maximus. Nunc ut tortor euismod, molestie enim eget, ornare nisi. Maecenas posuere justo
-                a ligula vulputate ultrices. Suspendisse potenti. Sed eget enim at tortor gravida sagittis. Interdum et
-                malesuada fames ac ante ipsum primis in faucibus.</p>
-        </div>
-    <div class="socialmedia">
-        <br>
-        <h1>Connect with Us</h1>
-        <p>social media icons here</p>
-        <div class="btn"><a>Subscribe</a>
-        </div>
+    
+    
+   
 
-        <div class="footer">
-            <div class="footer-container">
-                <div class="footer-box">
-                    <h3>Support Us</h3>
-                    <p>Donate</p>
-                    <p>Volunteer</p>
-                    <p>Store</p>
+    <section class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h1 class="hh1">About Us</h1>
+                    <p class="p1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sed eros in risus tincidunt mattis. Morbi auctor posuere maximus. Nunc ut tortor euismod, molestie enim eget, ornare nisi. Maecenas posuere justo a ligula vulputate ultrices. Suspendisse potenti. Sed eget enim at tortor gravida sagittis. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
                 </div>
-                <div class="footer-box">
-                    <h3>Get in Touch</h3>
-                    <p>contact@example.com</p>
-                    <p>+123 456 7890</p>
-                    <p>555 Seymour St, Vancouver, BC V6B 3H6</p>
+                <div class="about-images">
+                    <div class="about-image">
+                        <img src="img/img1.png" alt="About Us Image 1">
+                    </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="featured">
+        <div class="container">
+            <h1 class="featured_head">Featured Animals</h1>
+            <div class="cards">
+                <div class="card">
+                    <img src="img/Featuredanimal_1.jpg" alt="Animal 1">
+                    <h3>Animal 1</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel odio vel massa consectetur malesuada.</p>
+                    <p class="learnMore"> Learn more </p>
                 </div>
-                <div class="footer-box">
-                    <h3>Hours</h3>
-                    <p>8:00AM - 8:00PM</p>
-                    <br>
-                    <p>7 days a week</p>
+                <div class="card">
+                    <img src="img/Featuredanimal_2.jpg" alt="Animal 2">
+                    <h3>Animal 2</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel odio vel massa consectetur malesuada.</p>
+                    <p class="learnMore"> Learn more </p>
+                </div>
+                <div class="card">
+                    <img src="img/Featuredanimal_3.jpg" alt="Animal 3">
+                    <h3>Animal 3</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vel odio vel massa consectetur malesuada.</p>
+                    <p class="learnMore"> Learn more </p>
                 </div>
             </div>
         </div>
+    </section>
+
+    <section class="operation-hours">
+        <div class="container">
+            <div class="hours-content">
+                <div class="hours-text">
+                    <h1 class="hh1"> Oparation hours</h1>
+                    <ul class="p1">
+                        <li>8:00 AM - 6:00 PM</li>
+                        <li>7days a week</li>
+                    </ul>
+                    <div class="google-map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13586.612617429175!2d-123.12151117722152!3d49.28273235293434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDnCsDU3JzQ5LjkiTiAxMjPCsDE0JzUwLjMiVw!5e0!3m2!1sen!2sca!4v1567713173835!5m2!1sen!2sca" width="400" height="400" style="border:0;" allowfullscreen=""></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="connect">
+        <div class="container">
+            <h1 class="hh1">Connect with Us</h1>
+            <p>Follow us on social media for updates and special events</p>
+            <div class="btn">Subscribe</a></div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-box">
+                <h3>Support Us</h3>
+                <p><a href="#">Donate</a></p>
+                <p><a href="#">Volunteer</a></p>
+                <p><a href="#">Store</a></p>
+            </div>
+            <div class="footer-box">
+                <h3>Get in Touch</h3>
+                <p><a href="mailto:contact@example.com">contact@example.com</a></p>
+                <p>+123 456 7890</p>
+                <p>555 Seymour St, Vancouver, BC V6B 3H6</p>
+            </div>
+            <div class="footer-box">
+                <h3>Hours</h3>
+                <p>8:00AM - 8:00PM</p>
+                <p>7 days a week</p>
+            </div>
+        </div>
+    </footer>
 </body>
+<script src="scripts.js"></script>
+
 
 </html>
