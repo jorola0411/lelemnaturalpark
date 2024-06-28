@@ -19,9 +19,20 @@
                 <a href="merch.html">MERCH</a>
                 <a href="about.html">ABOUT US</a>
                 <a href="tickets.html">TICKETS</a>
-                <button class="donate-button">Donate</butn>
-            </nav>
-        </div>
+                <button class="donate-button" id="donateBtn">Donate</butn>
+                </nav>
+            </div>
+            <div id="donateModal" class="modal">
+                <div class="modal-content">
+                    <span class="close-btn" id="closeBtn">&times;</span>
+                    <h2>Donate to the Zoo</h2>
+                    <form id="donateForm">
+                        <label for="donationAmount">Donation Amount:</label>
+                        <input type="number" id="donationAmount" name="donationAmount" min="1" required>
+                        <button type="submit">Donate</button>
+                    </form>
+                </div>
+            </div>
     </header>
 
     <div class="banner">
@@ -111,10 +122,11 @@
         </div>
     </footer>
 
-    <script>
+    <script src="donate.js"">
         function nextPage() {
             window.location.href = "animal.html"; // Replace with the next page URL
         }
+
     </script>
 </body>
 </html>
