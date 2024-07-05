@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function() {
         const childTickets = parseInt(childTicketInput.value) || 0;
         const seniorTickets = parseInt(seniorTicketInput.value) || 0;
 
-        const totalCost = (adultTickets * 20) + (childTickets * 10) + (seniorTickets * 15);
+        const totalCost = (adultTickets * 25) + (childTickets * 15) + (seniorTickets * 2);
         totalCostElement.textContent = totalCost;
     }
 
