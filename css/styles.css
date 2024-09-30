@@ -9,7 +9,9 @@
     text-decoration: none;
     box-sizing: border-box;
 }
-
+a{
+   color: #F5F5F5;; 
+}
 body {
     font-family: 'Lato', sans-serif;
     background-color: #F5F5F5;
@@ -44,45 +46,13 @@ body {
 
 .logo_container img {
     float: left;
-    width: 150px;
-    height: 100px;
-}
-.logo_container h1{
-    color: white;
-    height: 100%;
-    display: table-cell;
-    vertical-align: middle;
-
-    font-size: 32px;
-    font-weight: 400;
-}
-
-.logo_container h1 span{
-    font-weight: 800;
-    color: brown;
-    text-align: left;
-}
-
-.navigation {
-    display: flex;
-    align-items: center;
-}
-
-.navigation a {
-    margin-left: 20px;
-    color: #F8F8F3;
-    font-size: 18px;
-    transition: color 0.3s ease;
-}
-
-.navigation a:hover {
-    color: #FFD75E;
+    width: 400px;
+    height: 50px;
 }
 
 .donate-button {
     font-family: "Abril Fatface", serif;
     font-size: larger;
-    margin-left: 100px;
     color: #30386D ;
     background-color:#fcd434 ;
     padding: 10px 20px;
@@ -612,7 +582,7 @@ button:hover {
 .modal {
     display: none;
     position: fixed;
-    z-index: 1;
+    z-index: 100;
     left: 0;
     top: 0;
     width: 100%;
@@ -663,3 +633,80 @@ button:hover {
     background-color: #ff6347;
 }
 /* till here for Donate Button */
+li{
+    list-style: none;
+}
+
+.navbar{
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 0 24px;
+}
+
+.nav-menu{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   gap: 60px;
+}
+
+.nav-link{
+    transition: 0.7s ease;
+}
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+.bar{
+    display: block;
+    width:25px;
+    height:3px;
+    margin:5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+@media (max-width: 768px) {
+
+    .logo_container img {
+        float: left;
+        width: 350px;
+        height: 50px;
+    }
+    .hamburger{
+        display: block;
+    }
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .nav-menu{
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        width:100%;
+        text-align:left;
+        transition: 0.3s ease-in-out;
+        background-color: #30386D;
+        z-index: 99;
+    }
+    .nav-menu.active{
+        left:0;
+    }
+    .nav-item{
+        margin: 16px 0;
+    }
+
+}

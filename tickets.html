@@ -7,20 +7,35 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+
     <header class="header">
-        <div class="inner_header">
+        <nav class="navbar">
             <div class="logo_container">
-                <img src="img/logo.png" alt="Zoo Logo">
-                <h1>Lelem Natural<span> Park</span></h1>
+                <a href="index.html">
+                    <img src="img/logo.png" alt="Zoo Logo">
+                </a>
             </div>
-            <nav class="navigation">
-                <a href="index.html">HOME</a>
-                <a href="about.html">ABOUT US</a>
-                <a href="animal.html">ANIMALS</a>
-                <a href="merch.html">MERCH</a>
-                <a href="tickets.html">TICKETS</a>
-                <button class="donate-button" id="donateBtn">Donate</butn>
-                </nav>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="about.html">ABOUT US</a>
+                </li>
+                <li class="nav-item">
+                    <a href="animal.html">ANIMALS</a>
+                </li>
+                <li class="nav-item">
+                    <a href="merch.html">MERCH</a>
+                </li>
+                <li class="nav-item">
+                    <a href="tickets.html">TICKETS</a>
+                </li>
+                <li class="nav-item">
+                    <button class="donate-button" id="donateBtn">Donate</butn>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
             <div id="donateModal" class="modal">
                 <div class="modal-content">
@@ -33,6 +48,7 @@
                     </form>
                 </div>
             </div>
+        </nav>
     </header>
     <div class="ticketcontainer">
         <h1>General Admission</h1>
@@ -92,4 +108,5 @@
 </body>
 <script src="js/donate.js"></script>
 <script src="js/ticket.js"></script>
+<script src="js/scripts.js"></script>
 </html>
