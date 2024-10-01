@@ -23,31 +23,27 @@ body {
     font-family: "Abril Fatface", serif;
     width: 100%;
     height: 100px;
-    display: flex;
+    display:block;
     align-items: center;
     background-color: #30386D;
     padding: 0 20px;
+
 }
 
-.inner_header {
-    width: 100%;
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+
 
 .logo_container{
     height: 100%;
-    display: table;
+    display: flex;
     float: left;
+    margin-right: 50px;
 }
 
 .logo_container img {
     float: left;
     width: 400px;
     height: 50px;
+    flex-grow: 1;
 }
 
 .donate-button {
@@ -247,7 +243,6 @@ body {
 .banner img {
     max-width:100%; 
 	height: auto; 
-	border:solid 1px #ccc; 
 }
 .BannerTitle {
     color:#1B2538;
@@ -256,7 +251,6 @@ body {
     margin-left: 30px;
     font-family: "Abril Fatface", serif;
     font-size: 80px;
-
 }
 /*  till here making banners*/
 /* About page */
@@ -297,16 +291,6 @@ body {
 .about_content p {
     text-align: justify;
     margin-bottom: 20px;
-}
-
-.about_content a {
-    color: #30386D;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.about_content a:hover {
-    color: #ff6347;
 }
 /*  till here for About page */
 /*  Animal page Grids */
@@ -626,7 +610,7 @@ button {
     cursor: pointer;
     margin-top: 10px;
     font-family: "Abril Fatface";
-    font-size:medium
+    font-size: medium;
 }
 
 button:hover {
@@ -641,7 +625,7 @@ li{
 display: flex;
 justify-content: space-between;
 align-items: center;
-padding: 0 24px;
+padding: 25px;
 }
 
 .nav-menu{
@@ -701,6 +685,7 @@ padding: 0 24px;
         transition: 0.3s ease-in-out;
         background-color: #30386D;
         z-index: 99;
+        
     }
     .nav-menu.active{
         left:0;
@@ -709,4 +694,58 @@ padding: 0 24px;
         margin: 16px 0;
     }
 
+    .banner {
+        display: flex;
+        flex-wrap:wrap;
+        position: relative;
+    }
+    .banner img {
+        max-width:100%; 
+        height: auto; 
+    }
+    .BannerTitle {
+        color:#1B2538;
+        margin-top:50px;
+        margin-left: 30px;
+        font-family: "Abril Fatface", serif;
+        font-size: 40px;
+    }
+    .about_content {
+        padding: 40px;
+        max-width: 500px;
+        margin: 0 auto;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        line-height: 1.6;
+        font-size: 18px;
+        color: #333;
+        font-family: 'Lato', sans-serif;
+        animation: fadeIn 0.9s ease-out;
+    }
+    
+    .about_content p {
+        margin-bottom: 20px;
+    }
+    
+    .about_content img {
+        width: 100%;
+        height: auto;
+        display: block;
+        margin: 20px 0;
+        border-radius: 8px;
+    }
+    
+    .about_content h2.section-title {
+        text-align: center;
+        margin-bottom: 30px;
+        font-family: 'Abril Fatface', cursive;
+        font-size: 36px;
+        color: #30386D;
+    }
+    
+    .about_content p {
+        text-align: justify;
+        margin-bottom: 20px;
+    }
 }
