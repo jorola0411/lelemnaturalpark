@@ -6,7 +6,6 @@ jobs:
   web-deploy:
     name: 🚀 Deploy HTML/CSS/JS
     runs-on: ubuntu-latest
-    steps:
       steps:
       - name: 🚚 Get latest code
         uses: actions/checkout@v4
