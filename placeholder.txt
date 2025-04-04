@@ -1,0 +1,11 @@
+ bear<p class="Animal_Description">Representing strength and family, Bears are large animals with strong limbs, and their fur varies greatly in color depending on the species. Bears have an excellent sense of smell, which helps them find food very quickly.</p>
+raccoon             <p class="Animal_Description">Representing trickery and playfulness, Raccoons are small mammals with their black mask over their eyes. They are highly intelligent and often adapt to multiple environments, including urban areas. They are excellent pest controllers and help the environment in many ways.</p>
+beaver            <p class="Animal_Description">Representing hard work and unity, beavers are large and semi aquatic mammals known for building dams. With excellent swimming skills and powerful teeth used for cutting wood, Beavers are proficient in creating dams, in which perserve our eco systems.</p>
+wolf            <p class="Animal_Description">As a symbol of loyalty and courage, Wolves are large canines with strong jaws, long legs, and often seen in groups. They have keen senses of smell and agile. This makes them natural born hunters in the wild and do their part in maintaining it by hunting multiple kinds of prey, which their prey influence the plants and animals after them.</p>
+eagle            <p class="Animal_Description">Symbolizing respect and honor, Eagles are large birds known for their large wingspans, which enable them to soar at great heights. Eagles have excellent vision, which allows to them to find and hunt prey from a long range. Because of this, they are also known to hunt for salmon in the sea. They are not picky eaters, and eat animal carcasses, which help with nature's clean up process.</p>
+
+frog            <p class="Animal_Description">Being a symbol of wealth and abundance, Frogs are small amphibians that uses long hind legs for jumping long distances, and their webbed feet help them traverse water easily. They help the environment by eating a variety of invertebrates.</p>
+
+
+
+
