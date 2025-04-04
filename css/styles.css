@@ -453,6 +453,23 @@ body {
 
 /*  Next page button for animal page */
 
+
+.animaldetailcontainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.animaldetailcontainer img, p {
+    grid-column: span 1 / span 1; 
+}
+.animaldetailcontainer  p {
+    grid-column: span 2 / span 1; 
+    font-size: larger;
+}
+
+
 /* Merchandise Page */
 .merchcards {
     display: grid;
@@ -872,8 +889,23 @@ li {
     }
 
     .merchcards2 {
-
         grid-template-columns: repeat(2, 1fr);
-
     }
+    
+.animaldetailcontainer {
+
+    grid-template-columns: repeat(1, 1fr);
+}
+.animaldetailcontainer img, p {
+    grid-column: span 1 / span 1; 
+    margin: auto;
+    margin-bottom: 5px;
+}
+.animaldetailcontainer  p {
+    grid-column: span 2 / span 1; 
+    font-size: large;
+    text-align: center;
+    padding: 10px;
+}
+
 }

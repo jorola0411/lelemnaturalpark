@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Animals | Lelem Natural Park</title>
+    <title>Animal Details | Lelem Natural Park</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
-
 <body>
     <header class="header">
         <nav class="navbar">
@@ -51,54 +49,34 @@
             </div>
         </nav>
     </header>
-
     <div class="banner">
         <img src="img/banner1.jpg">
-        <p class="BannerTitle"> Animal Library</p>
+        <p class="BannerTitle" id="animal-name"></p>
     </div>
-    <section class="animalcards">
-        <div class="animalcard">
-            <h3 class="animalcard_head"> Bear</h3>
-            <img src="img/bear2.png" alt="Bear">
-            <p class="learnMore"><a href="animaldetail.html?animal=bear">Learn More</a> </p>
-        </div>
+    <div class="animaldetailcontainer">
+    <img id="animal-img" src="" alt="" style="max-width:300px">
+    <p id="animal-description"></p>
+</div>
+    <script>
+        // Helper to get the ?animal= query from the URL
+        const params = new URLSearchParams(window.location.search);
+        const animal = params.get("animal"); // e.g. ?animal=bear
+    
+        fetch("animals.json")
+          .then(res => res.json())
+          .then(data => {
+            if (animal && data[animal]) {
+              const info = data[animal];
+              document.getElementById("animal-name").textContent = info.name;
+              document.getElementById("animal-description").textContent = info.description;
+              document.getElementById("animal-img").src = info.image;
+              document.getElementById("animal-img").alt = info.name;
+            } else {
+              document.getElementById("animal-name").textContent = "Animal not found";
+            }
+          })
 
-        <div class="animalcard">
-            <h3 class="animalcard_head">Raccoon</h3>
-            <img src="img/raccoon2.png" alt="Raccoon">
-            <p class="learnMore"><a href="animaldetail.html?animal=raccoon">Learn More</a></p>
-        </div>
-
-        <div class="animalcard">
-            <h3 class="animalcard_head">Beaver</h3>
-            <img src="img/beaver2.png" alt="Beaver">
-            <p class="learnMore"><a href="animaldetail.html?animal=beaver">Learn More</a></p>
-        </div>
-
-        <div class="animalcard">
-            <h3 class="animalcard_head">Wolf</h3>
-            <img src="img/wolf2.png" alt="Wolf">
-            <p class="learnMore"><a href="animaldetail.html?animal=wolf">Learn More</a></p>
-        </div>
-
-        <div class="animalcard">
-            <h3 class="animalcard_head">Eagle</h3>
-            <img src=img/eagle2.png alt="Animal 5">
-            <p class="learnMore"> <a href="animaldetail.html?animal=eagle">Learn More</a> </p>
-        </div>
-
-        <div class="animalcard">
-            <h3 class="animalcard_head">Frog</h3>
-            <img src="img/frog2.png" alt="Animal 6">
-            <p class="learnMore"> <a href="animaldetail.html?animal=frog">Learn More</a></p>
-        </div>
-
-    </section>
-
-    <div class="next-page">
-        <button onclick="window.location.href='animal.html';">Next Page</button>
-    </div>
-
+      </script>
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-box">
@@ -123,5 +101,3 @@
     <script src="js/donate.js""></script>
     <script src=" js/scripts.js"></script>
 </body>
-
-</html>
