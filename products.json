@@ -1,0 +1,62 @@
+{
+    "lelemkeychain": {
+        "name": "Lelem Keychains",
+        "description": "Show your support and love for Lelem Natural Park with our assortment of animal keychains. Attach them to your backpack, purses, and more!",
+        "image": "img/keychain mockup.png",
+        "price": "$10.99"
+    },
+    "lelemnaturaltotebag": {
+        "name": "Lelem Natural Park Totebag",
+        "description": "Carry your items in style with the Lelem Natural Park Totebag! Made with sustainable materials and care, the Lelem Natural Park Tote Bag is perfect to keep all your items in one place, while keep a sense of style.",
+        "image": "img/totebag mockup.png",
+        "price": "$15.99"
+    },
+    "lelembuckethat": {
+        "name": "Lelem Bucket Hat",
+        "description": "Featuring the Lelem Natural Park logo on the front and a cute bear on the back. Stroll in style and keeping the sun away with our bucket hat. ",
+        "image": "img/bucket hat mockup.png",
+        "price": "$12.99"
+    },
+    "bearmug": {
+        "name": "Bear Mug",
+        "description": "Start your day with our Lelem Natural Park Bear Mug! Locally handmade and meant for daily use, our mug is perfect for those warm cups of coffee or cold cups of water. These are hand wash only.",
+        "image": "img/mug mockup.png",
+        "price": "$8.99"
+    },
+    "beavertshirt": {
+        "name": "Beaver T-shirt",
+        "description": "Made with a blend of polyester and cotton, show your support for Lelem Natural Park with our wide selection of graphic tees. Featuring an animal of your choice and color of your choice, our T-shirts are eye-catching and fit for all kinds of weather.",
+        "image": "img/t-shrts1.jpg",
+        "price": "$10.99"
+    },
+    "raccoontshirt": {
+        "name": "Raccoon T-shirt",
+        "description": "Made with a blend of polyester and cotton, show your support for Lelem Natural Park with our wide selection of graphic tees. Featuring an animal of your choice and color of your choice, our T-shirts are eye-catching and fit for all kinds of weather.",
+        "image": "img/t-shrts2.jpg",
+        "price": "$10.99"
+    },
+    "wolftshirt": {
+        "name": "Wolf T-shirt",
+        "description": "Made with a blend of polyester and cotton, show your support for Lelem Natural Park with our wide selection of graphic tees. Featuring an animal of your choice and color of your choice, our T-shirts are eye-catching and fit for all kinds of weather.",
+        "image": "img/t-shrts3.png",
+        "price": "$10.99"
+    },
+    "vancouverzoocap": {
+        "name": "Vancouver Zoo Cap",
+        "description": "With a minimalistic design, Our Vancouver Zoo cap features a curved brim and adjustable strap for a perfect fit. Wear it on your hikes, zoo runs, or lazy weekends.",
+        "image": "img/cap1.jpg",
+        "price": "$9.99"
+    },
+    "bearcap": {
+        "name": "Vancouver Bear Cap",
+        "description": "With a minimalistic design, Our Vancouver Zoo cap features a curved brim and adjustable strap for a perfect fit. Wear it on your hikes, zoo runs, or lazy weekends.",
+        "image": "img/cap2.jpg",
+        "price": "$9.99"
+    },
+    "lelemcap": {
+        "name": "Lelem Cap",
+        "description": "With a minimalistic design, Our Vancouver Zoo cap features a curved brim and adjustable strap for a perfect fit. Wear it on your hikes, zoo runs, or lazy weekends.",
+        "image": "img/cap3.jpg",
+        "price": "$9.99"
+    }
+}

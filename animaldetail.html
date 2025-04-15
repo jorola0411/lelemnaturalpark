@@ -58,9 +58,8 @@
     <p id="animal-description"></p>
 </div>
     <script>
-        // Helper to get the ?animal= query from the URL
         const params = new URLSearchParams(window.location.search);
-        const animal = params.get("animal"); // e.g. ?animal=bear
+        const animal = params.get("animal"); 
     
         fetch("animals.json")
           .then(res => res.json())

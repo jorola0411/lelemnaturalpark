@@ -3,11 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Buy Tickets | Lelem Natural Park</title>
+    <title>Animal Details | Lelem Natural Park</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-
     <header class="header">
         <nav class="navbar">
             <div class="logo_container">
@@ -50,68 +49,44 @@
             </div>
         </nav>
     </header>
-    <div class="ticketpagecontainer">
-  <div class="ticketcontainer">
-    <h1>General Admission</h1>
-    <form id="ticketForm" class="ticketForm">
-      <div class="ticket-row">
-        <div class="ticket-details">
-          <h2>Adult (18–64)</h2>
-          <p class="prices">
-            <span class="regular-price">$25.00</span>
-            <span class="member-price">Member: $22.00</span>
-          </p>
+    <div class="product-detail-container">
+        <div class="product-image">
+            <img id="product-img" src="" alt="Product Image">
         </div>
-        <div class="ticket-input">
-          <label for="adultTickets">Qty</label>
-          <input type="number" id="adultTickets" name="adultTickets" value="0" min="0">
+        <div class="product-info">
+            <h1 id="product-name"></h1>
+            <p id="product-description"></p>
+            <p id="product-price" class="price"></p>
+            <button class="add-to-cart-btn">Add to Cart</button>
         </div>
-      </div>
+    </div>
+    
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const product = params.get("product"); 
+    
+        fetch("products.json")
+          .then(res => res.json())
+          .then(data => {
+            if (product && data[product]) {
+              const info = data[product];
+              document.getElementById("product-name").textContent = info.name;
+              document.getElementById("product-description").textContent = info.description;
+              document.getElementById("product-img").src = info.image;
+              document.getElementById("product-price").textContent = info.price;
+            } else {
+              document.getElementById("product-name").textContent = "Product not found";
+            }
+          })
 
-      <div class="ticket-row">
-        <div class="ticket-details">
-          <h2>Child (3–17)</h2>
-          <p class="prices">
-            <span class="regular-price">$15.00</span>
-            <span class="member-price">Member: $12.00</span>
-          </p>
-        </div>
-        <div class="ticket-input">
-          <label for="childTickets">Qty</label>
-          <input type="number" id="childTickets" name="childTickets" value="0" min="0">
-        </div>
-      </div>
-
-      <div class="ticket-row">
-        <div class="ticket-details">
-          <h2>Senior (65+)</h2>
-          <p class="prices">
-            <span class="regular-price">$20.00</span>
-            <span class="member-price">Member: $18.00</span>
-          </p>
-        </div>
-        <div class="ticket-input">
-          <label for="seniorTickets">Qty</label>
-          <input type="number" id="seniorTickets" name="seniorTickets" value="0" min="0">
-        </div>
-      </div>
-
-      <div class="total">
-        Total: <span id="totalCost">$0.00</span>
-      </div>
-
-      <button type="submit" class="buybutton">Buy Tickets</button>
-    </form>
-  </div>
-</div>
-
-    <div class="footer">
+      </script>
+    <footer class="footer">
         <div class="footer-container">
             <div class="footer-box">
                 <h3>Support Us</h3>
-                <p>Donate</p>
-                <p>Volunteer</p>
-                <p>Store</p>
+                <p><a href="#">Donate</a></p>
+                <p><a href="#">Volunteer</a></p>
+                <p><a href="#">Store</a></p>
             </div>
             <div class="footer-box">
                 <h3>Get in Touch</h3>
@@ -122,13 +97,10 @@
             <div class="footer-box">
                 <h3>Hours</h3>
                 <p>8:00AM - 8:00PM</p>
-                <br>
                 <p>7 days a week</p>
             </div>
         </div>
-    </div>  
+    </footer>
+    <script src="js/donate.js""></script>
+    <script src=" js/scripts.js"></script>
 </body>
-<script src="js/donate.js"></script>
-<script src="js/ticket.js"></script>
-<script src="js/scripts.js"></script>
-</html>
