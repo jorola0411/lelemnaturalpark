@@ -788,6 +788,7 @@ body {
     height: 100%;
     overflow: auto;
     background-color: rgba(0, 0, 0, 0.4);
+    
 }
 
 .modal-content {
@@ -799,6 +800,7 @@ body {
     max-width: 400px;
     border-radius: 10px;
     text-align: center;
+    animation: fadeIn 0.3s ease-out forwards;
 }
 
 .close-btn {
@@ -837,6 +839,7 @@ button:hover {
 li {
     list-style: none;
 }
+
 
 .navbar {
     display: flex;
